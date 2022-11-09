@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AplicationFinal</string>
+    <string name="labelTitulo">Titulo:</string>
+    <string name="titulo">Titulo</string>
+    <string name="labelAño">Año Lanzamiento:</string>
+    <string name="año">Año</string>
+</resources>
