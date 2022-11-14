@@ -47,7 +47,8 @@
                         android:id="@+id/labelTitulo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/labelTitulo">
+                        android:text="@string/labelTitulo"
+                        android:paddingRight="5dp">
                     </TextView>
 
                     <TextView
@@ -68,7 +69,8 @@
                         android:id="@+id/labelreleasedate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/labelAño">
+                        android:text="@string/labelAño"
+                        android:paddingRight="5dp">
                     </TextView>
 
                     <TextView

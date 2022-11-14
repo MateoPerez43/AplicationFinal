@@ -1,7 +1,21 @@
 <resources>
-    <string name="app_name">AplicationFinal</string>
+    <string name="app_name">Anime Movies</string>
     <string name="labelTitulo">Titulo:</string>
     <string name="titulo">Titulo</string>
     <string name="labelAño">Año Lanzamiento:</string>
     <string name="año">Año</string>
+    <string name="labelTituloOriginal">Titulo Original:</string>
+    <string name="tituloOriginal">Titulo Original</string>
+    <string name="labelTituloRemanufacturado">Titulo Facturado:</string>
+    <string name="tituloRemanufacturado">Titulo Facturado</string>
+    <string name="labelDirector">Director:</string>
+    <string name="director">Director</string>
+    <string name="labelProductor">Produtor:</string>
+    <string name="productor">Productor</string>
+    <string name="labelDuraccion">Duracción:</string>
+    <string name="duraccion">Duracción</string>
+    <string name="labelCalificacion">Calificación:</string>
+    <string name="calificacion">Calificación</string>
+    <string name="labelDescripcion">Descripción:</string>
+    <string name="descripcion">Descripción</string>
 </resources>

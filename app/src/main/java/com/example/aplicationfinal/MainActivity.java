@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     filmsAdapter.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Toast.makeText(getApplicationContext(),"seleccion: "+ films.get(recyclerView.getChildAdapterPosition(view)).getOriginal_title_romanised(),Toast.LENGTH_SHORT).show();
+                            moveToDescription(view);
                         }
                     });
                     recyclerView.setAdapter(filmsAdapter);
@@ -61,4 +62,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void moveToDescription(View view) {
+        Intent segunda = new Intent(MainActivity.this, Activity_2.class)
+                .putExtra("title",films.get(recyclerView.getChildAdapterPosition(view)).getTitle())
+                .putExtra("originalTitle",films.get(recyclerView.getChildAdapterPosition(view)).getOriginal_title())
+                .putExtra("originalTitleRomanised",films.get(recyclerView.getChildAdapterPosition(view)).getOriginal_title_romanised())
+                .putExtra("imageBanner",films.get(recyclerView.getChildAdapterPosition(view)).getMovie_banner())
+                .putExtra("description",films.get(recyclerView.getChildAdapterPosition(view)).getDescription())
+                .putExtra("director",films.get(recyclerView.getChildAdapterPosition(view)).getDirector())
+                .putExtra("productor",films.get(recyclerView.getChildAdapterPosition(view)).getProducer())
+                .putExtra("releaseDate",films.get(recyclerView.getChildAdapterPosition(view)).getRelease_date())
+                .putExtra("runningTime",films.get(recyclerView.getChildAdapterPosition(view)).getRunning_time())
+                .putExtra("score",films.get(recyclerView.getChildAdapterPosition(view)).getRt_score())
+                .putExtra("image",films.get(recyclerView.getChildAdapterPosition(view)).getImage());
+        startActivity(segunda);
+    }
+
 }
